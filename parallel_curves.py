@@ -67,6 +67,7 @@ def parallel_curves(x, y, d=1, make_plot=False, flag1=True):
         
         For verification purposes, the matlab code has been transcribed
         into python as faithfully as possible.  
+        Except for make_plot. Make your own damn plots.
     
     Parameters
     ----------
