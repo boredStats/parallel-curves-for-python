@@ -34,7 +34,7 @@ def magn(a, dim):
     b = np.sum(np.conj(a) * a, axis=dim)
     return np.sqrt(b)
 
-def parallel_curves(x, y, d=1, make_plot=False, flag1=False):
+def parallel_curves(x, y, d=1, make_plot=False, flag1=True):
     """
     Copying documentation from matlab function
     
