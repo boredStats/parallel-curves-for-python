@@ -115,9 +115,9 @@ def parallel_curves(x, y, d=1, make_plot=False, flag1=True):
     unv[:, 0] = nv[:, 0] / norm_nv
     unv[:, 1] = nv[:, 1] / norm_nv
     
-    r0 = (dx**2 + dy**2) ** 1.5
-    r1 = np.abs(dx*dy2 - dy*dx2)
-    R = np.divide(r0, r1)
+#    r0 = (dx**2 + dy**2) ** 1.5
+#    r1 = np.abs(dx*dy2 - dy*dx2)
+    R = ((dx**2 + dy**2) ** 1.5)/(np.abs(dx*dy2 - dy*dx2)) #r0 / r1
     
     overlap = R < d
     
